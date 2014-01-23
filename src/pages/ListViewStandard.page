@@ -1,0 +1,53 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="T-Yoshikawa Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            <apex:form id="form">
+                <div class="app-wrapper">
+                    <c:MobileDesignTempleteMenu />
+                    <c:MobileDesignTempleteHeader headerTitle="Opportunities" />
+                    <div class="app-content">
+                        <ul class="list-view right-one-icons">
+                            <li>
+                                <apex:outputLink value="#" styleClass="content">
+                                    <h2>
+                                        <apex:outputText value="Acme 1,200 Widgets" />
+                                    </h2>
+                                    <p>
+                                        <strong>
+                                            <apex:outputText value="$24,000" />
+                                        </strong><br/>
+                                        <apex:outputText value="Value Proposition" />
+                                    </p>
+                                    <div class="list-view-icons">
+                                        <span class="icon-right-arrow">&nbsp;</span>
+                                    </div>
+                                </apex:outputLink>
+                            </li>
+                            <li>
+                                <apex:outputLink value="#" styleClass="content">
+                                    <h2>
+                                        <apex:outputText value="100 Servers" />
+                                    </h2>
+                                    <p>
+                                        <strong class="value">
+                                            <apex:outputText value="$45,000" />
+                                        </strong><br/>
+                                            <apex:outputText value="Needs Analysis" />
+                                    </p>
+                                    <div class="list-view-icons">
+                                        <span class="icon-right-arrow">&nbsp;</span>
+                                    </div>
+                                </apex:outputLink>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

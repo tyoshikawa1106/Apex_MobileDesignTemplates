@@ -1,0 +1,14 @@
+<apex:component >
+    <apex:attribute name="headerTitle" type="String" description="headerTitle" />
+    <header>
+        <div class="main-menu-button main-menu-button-left">
+            <apex:outputLink styleClass="menu">&nbsp;</apex:outputLink>
+        </div>
+        <div class="main-menu-button main-menu-button-right">
+            <apex:outputLink styleClass="gear">&nbsp;</apex:outputLink>
+        </div>
+        <h1>
+            <apex:outputText value="{!headerTitle}" />
+        </h1>
+    </header>
+</apex:component>

@@ -1,0 +1,21 @@
+<apex:page >
+    <head>
+        <title>
+            <apex:insert name="title"/>
+        </title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, 
+            minimum-scale=1, maximum-scale=1, user-scalable=no"/> 
+        <apex:stylesheet value="{!URLFOR($Resource.Mobile_Design_Templates, 
+            'common/css/app.min.css')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.Mobile_Design_Templates, 
+            'common/js/jQuery2.0.2.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.Mobile_Design_Templates, 
+            'common/js/jquery.touchwipe.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.Mobile_Design_Templates, 
+            'common/js/main.min.js')}"/>
+    </head>
+    <body>
+        <apex:insert name="body" />
+    </body>
+</apex:page>
