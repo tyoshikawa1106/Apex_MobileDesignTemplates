@@ -1,7 +1,9 @@
 Apex_MobileDesignTemplates
 ==========================
 
-モバイルデザインテンプレートのサンプルです。  
+モバイルデザインテンプレートのサンプルで勉強してみました。  
+いくつかうまくいっていないところがありますがとりあえずひととおり確認できました。  
+  
 > 参考：モバイルデザインテンプレート  
 > http://www2.developerforce.com/ja/mobile/services/mobile-templates  
   
