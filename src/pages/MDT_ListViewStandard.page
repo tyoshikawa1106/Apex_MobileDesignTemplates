@@ -1,16 +1,21 @@
 <apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+
     <apex:composition template="MobileDesignTemplete">
     
         <apex:define name="title">
-            <apex:outputText value="T-Yoshikawa Apps" />
+            <apex:outputText value="Mobile Design Templates Apps" />
         </apex:define>
         
         <apex:define name="body">
             <apex:form id="form">
+            
                 <div class="app-wrapper">
-                    <c:MobileDesignTempleteMenu />
-                    <c:MobileDesignTempleteHeader headerTitle="Opportunities" />
+                
+                    <c:MobileDesignTempletesMenu />
+                    <c:MobileDesignTempletesHeader headerTitle="List View Standard" />
+                    
                     <div class="app-content">
+                        
                         <ul class="list-view right-one-icons">
                             <li>
                                 <apex:outputLink value="#" styleClass="content">
@@ -36,8 +41,9 @@
                                     <p>
                                         <strong class="value">
                                             <apex:outputText value="$45,000" />
-                                        </strong><br/>
-                                            <apex:outputText value="Needs Analysis" />
+                                        </strong>
+                                        <br/>
+                                        <apex:outputText value="Needs Analysis" />
                                     </p>
                                     <div class="list-view-icons">
                                         <span class="icon-right-arrow">&nbsp;</span>
@@ -45,8 +51,9 @@
                                 </apex:outputLink>
                             </li>
                         </ul>
-                    </div>
-                </div>
+                        
+                    </div><!--#app-content-->
+                </div><!--#app-wrapper-->
             </apex:form>
         </apex:define>
     </apex:composition>

@@ -13,6 +13,8 @@
         <apex:includeScript value="{!URLFOR($Resource.Mobile_Design_Templates, 
             'common/js/jquery.touchwipe.min.js')}"/>
         <apex:includeScript value="{!URLFOR($Resource.Mobile_Design_Templates, 
+            'common/js/swipeview.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.Mobile_Design_Templates, 
             'common/js/main.min.js')}"/>
     </head>
     <body>

@@ -5,7 +5,7 @@
             <apex:outputLink styleClass="menu">&nbsp;</apex:outputLink>
         </div>
         <div class="main-menu-button main-menu-button-right">
-            <apex:outputLink styleClass="gear">&nbsp;</apex:outputLink>
+            <apex:outputLink value="{!$Page.MDT_SettingsScreen}" styleClass="gear">&nbsp;</apex:outputLink>
         </div>
         <h1>
             <apex:outputText value="{!headerTitle}" />

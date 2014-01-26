@@ -1,0 +1,36 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    
+    <meta http-equiv="refresh" content="2; url='{!$Page.MDT_ListViewStandard}'" />
+    
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="Mobile Design Templates Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            <div class="app-wrapper splash">
+                <div class="app-content">
+
+                    <div class="splash-screen-wrapper">
+                
+                        <div class="content">
+                            <div class="logo">
+                                <apex:image value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/placeholders/logo.png')}" width="206" height="54" />
+                            </div><!-- .logo -->
+                            
+                            <div class="tagline">
+                                <apex:outputText value="Acme Inc Mobile App" />
+                            </div><!-- .tagline -->
+                            
+                        </div><!-- .content -->
+                        
+                    </div><!-- .splash-screen -->
+                    
+                </div><!-- #app-content -->
+                
+            </div><!--#app-wrapper-->
+            
+        </apex:define>
+    </apex:composition>
+</apex:page>

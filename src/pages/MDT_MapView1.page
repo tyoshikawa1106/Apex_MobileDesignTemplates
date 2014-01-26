@@ -1,0 +1,111 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    
+    <apex:includeScript value="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" />
+    
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="Mobile Design Templates Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            
+            <apex:form id="form">
+                <div class="app-wrapper">
+                    
+                    <c:MobileDesignTempletesMenu />
+                    <c:MobileDesignTempletesHeader headerTitle="Map View1" />
+                    
+                    <div class="app-content">
+                        
+                        <ul class="list-view left-thumbs right-one-icons">
+                            <li>
+                                <div class="thumbs">
+                                    <apex:image styleClass="thumb thumb-3" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/placeholders/contact-2.png')}" />
+                                </div><!-- .thumbs -->
+                                
+                                <a href="#" class="content" data-map-id="0">
+                                    <h2>
+                                        <apex:outputText value="Rachel Aarons" />
+                                    </h2>
+                                    <apex:outputText value="Project Manager" />
+                                    <div class="list-view-icons">
+                                        <span class="icon-map-dot">&nbsp;</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="thumbs">
+                                    <apex:image styleClass="thumb thumb-3" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/placeholders/contact-1.png')}" />
+                                </div><!-- .thumbs -->
+                                
+                                <a href="#" class="content" data-map-id="1">
+                                    <h2>
+                                        <apex:outputText value="Bruce Bryant" />
+                                    </h2>
+                                    <apex:outputText value="IT Supervisor" />
+                                    <div class="list-view-icons">
+                                        <span class="icon-map-dot">&nbsp;</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="thumbs">
+                                    <apex:image styleClass="thumb thumb-3" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/placeholders/contact-0.png')}" />
+                                </div><!-- .thumbs -->
+                                <a href="#" class="content" data-map-id="3">
+                                    <h2>
+                                        <apex:outputText value="Matthew Castillo" />
+                                    </h2>
+                                    <apex:outputText value="Public Outreach" />
+                                    <div class="list-view-icons">
+                                        <span class="icon-map-dot">&nbsp;</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--#app-content-->
+                    
+                    <div id="map-canvas-wrapper" class="map-canvas-wrapper map-canvas-wrapper-list-view" /><!--#map-canvas-wrapper-->
+                    
+                </div><!--#app-wrapper-->
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+        
+            var markers = [
+                {
+                    id: 0,
+                    lat: 47.604789,
+                    lng: -122.335682,
+                    contentString: "<div class='infowindow-container'><p class='span-50'><strong>Address</strong><br/><a href='https://maps.apple.com/maps?q=47.620513,-122.34861'>555 Madison Ave<br/>Seattle, WA<br/>98105</a></p><p class='span-50'><strong>Phone</strong><br/>555.123.4321</p></div>"
+                },
+                {
+                    id: 1,
+                    lat: 47.620975,
+                    lng: -122.154976,
+                    contentString: "<div class='infowindow-container'><p class='span-50'><strong>Address</strong><br/><a href='https://maps.apple.com/maps?q=47.604789,-122.335682'>123 Bellevue Way NE<br/>Bellevue, WA<br/>98100</a></p><p class='span-50'><strong>Phone</strong><br/>555.123.4321</p></div>"
+                },
+                {
+                    id: 2,
+                    lat: 47.77879,
+                    lng: -122.311188,
+                    contentString: "<div class='infowindow-container'><p class='span-50'><strong>Address</strong><br/><a href='https://maps.apple.com/maps?q=47.77879,-122.311188'>901 Montlake Terrace Drive<br/>Montlake Terrace, WA<br/>98101</a></p><p class='span-50'><strong>Phone</strong><br/>555.123.4321</p></div>"
+                },
+                {
+                    id: 3,
+                    lat: 47.6766,
+                    lng: -122.388924,
+                    contentString: "<div class='infowindow-container'><p class='span-50'><strong>Address</strong><br/><a href='https://maps.apple.com/maps?q=47.6766,-122.388924'>45 NW Ballard Ave<br/>Seattle, WA<br/>98125</a></p><p class='span-50'><strong>Phone</strong><br/>555.123.4321</p></div>"
+                }
+            ]
+            mapObj.init({
+                view: "listView",
+                markers: markers
+            });
+        });
+    </script>
+</apex:page>

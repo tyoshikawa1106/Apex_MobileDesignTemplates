@@ -1,0 +1,82 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="Mobile Design Templates Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            <apex:form id="form">
+            
+                <div class="app-wrapper">
+                
+                    <c:MobileDesignTempletesMenu />
+                    <c:MobileDesignTempletesHeader headerTitle="List View Timeline" />
+                    
+                    <div class="app-content">
+                        <div class="detail-view-header">
+                            <div class="content">
+                                <h1>
+                                    <apex:outputText value="Acme Upgrade" />
+                                </h1>
+                            </div><!--.content-->
+                        </div><!--.detail-view-header-->
+                        <ul class="list-view list-view-milestones">
+                            <li class="complete">
+                                <div class="content">
+                                    <div class="date">
+                                        <apex:outputText value="07/13/2013" />
+                                    </div>
+                                    <div class="objective">
+                                        <apex:outputText value="Milestone Objective Text" />
+                                    </div><!--.objective-->
+                                </div><!--.content-->
+                            </li>
+                            <li class="complete">
+                                <div class="content">
+                                    <div class="date">
+                                        <apex:outputText value="07/13/2013" />
+                                    </div>
+                                    <div class="objective">
+                                        <apex:outputText value="Milestone Objective Text" />
+                                    </div><!--.objective-->
+                                </div><!--.content-->
+                            </li>
+                            <li class="current">
+                                <div class="content">
+                                    <div class="date">
+                                        <apex:outputText value="07/13/2013" />
+                                    </div>
+                                    <div class="objective">
+                                        <apex:outputText value="Milestone Objective Text" />
+                                    </div><!--.objective-->
+                                </div><!--.content-->
+                            </li>
+                            <li class="future">
+                                <div class="content">
+                                    <div class="date">
+                                        <apex:outputText value="07/13/2013" />
+                                    </div>
+                                    <div class="objective">
+                                        <apex:outputText value="Milestone Objective Text" />
+                                    </div><!--.objective-->
+                                </div><!--.content-->
+                            </li>
+                            <li class="future">
+                                <div class="content">
+                                    <div class="date">
+                                        <apex:outputText value="07/13/2013" />
+                                    </div>
+                                    <div class="objective">
+                                        <apex:outputText value="Milestone Objective Text" />
+                                    </div><!--.objective-->
+                                </div><!--.content-->
+                            </li>
+                        </ul><!--.milestone-list-view-->
+                    </div><!--#app-content-->
+                </div><!--#app-wrapper-->
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

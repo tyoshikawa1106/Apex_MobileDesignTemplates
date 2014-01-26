@@ -1,0 +1,136 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="Mobile Design Templates Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            <apex:form id="form">
+                <div class="app-wrapper">
+                    
+                    <c:MobileDesignTempletesMenu />
+                    <c:MobileDesignTempletesHeader headerTitle="Detail View3" />
+                    
+                    <div class="app-content">
+                        
+                        <div class="detail-view-header with-action-panel">
+                            <div class="content">
+                                <h1>
+                                    <apex:outputText value="#310129123" />
+                                </h1>
+                                <div class="status status-red">
+                                    <span class="status-dot">&nbsp;</span>
+                                    <apex:outputText value="Processing" />
+                                </div>
+                                <div class="detail-view-action-panel">
+                                    <apex:outputLink value="#" styleClass="action-history open-modal">&nbsp;</apex:outputLink>
+                                    <apex:outputLink value="#" styleClass="action-closeloss open-modal">&nbsp;</apex:outputLink>
+                                    <apex:outputLink value="#" styleClass="action-phone open-modal">&nbsp;</apex:outputLink>
+                                </div>
+                            </div><!--.content-->
+                        </div><!--.detail-view-header-->
+                        
+                        <section class="opportunity-overview">
+                            <div class="content">
+                                <h1>
+                                    <apex:outputText value="$45,012" />
+                                </h1>
+                                <apex:outputText value="Delivery date 07/11/2013" />
+                            </div>
+                        </section>
+                        
+                        <section class="border-top">
+                            <div class="content">
+                                <h1 class="inline">
+                                    <apex:outputText value="Acme" />
+                                </h1>
+                                <p>
+                                    <apex:outputText value="1 Main Street" />
+                                    <br/>
+                                    <apex:outputText value="San Francisco, CA 94105" />
+                                    <br/>
+                                    <apex:outputText value="USA" />
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="border-top">
+                            <div class="content">
+                                <h3>
+                                    <apex:outputText value="Products" />
+                                </h3>
+                                <p>
+                                    <a href="#">
+                                        <apex:outputText value="Oldfashioned Bridge" />
+                                    </a>
+                                    <br/>
+                                    <apex:outputText value="4 @ $32,123" />
+                                </p>
+                                <p class="no-bottom-padding">
+                                    <a href="#">
+                                        <apex:outputText value="Tshirts" />
+                                    </a>
+                                    <br/>
+                                    <apex:outputText value="432 @ $12.95" />
+                                </p>
+                            </div>
+                        </section>
+                        
+                        <section class="data-capture-buttons one-buttons">
+                            <div class="content">
+                                <apex:outputLink value="#">
+                                    <apex:outputText value="edit" />
+                                </apex:outputLink>
+                            </div>
+                        </section><!--.data-capture-buttons-->
+                    </div>
+                </div>
+                
+                <!-- Modal -->
+                <div class="modal">
+                    <div class="background"></div>
+                    <div class="modal-content-wrapper">
+                        <div class="modal-content">
+                            <div class="detail-view-header">
+                                <div class="content">
+                                    <h1>
+                                        <apex:outputText value="Header Here" />
+                                    </h1>
+                                </div><!--.content-->
+                            </div><!--.detail-view-header-->
+                            
+                            <section style="min-height:70%;">
+                                <div class="content">
+                                    <center>
+                                        <apex:outputText value="Content Here" />
+                                    </center>
+                                </div><!-- .content -->
+                            </section>
+                            
+                            <section>
+                                <div class="content">
+                                    <div class="data-capture-buttons two-buttons">
+                                        <div class="content">
+                                            <a href="#" class="close-modal">
+                                                <apex:outputText value="cancel" />
+                                            </a>
+                                            <a href="#" class="close-modal">
+                                                <apex:outputText value="submit" />
+                                            </a>
+                                        </div><!-- .content -->
+                                    </div><!--.data-capture-buttons-->
+                                </div><!-- .content -->
+                            </section>
+                            
+                        </div> <!-- .modal-content -->
+                        
+                    </div><!-- .modal-content-wrapper -->
+                    
+                </div><!-- #modal.modal -->
+                
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

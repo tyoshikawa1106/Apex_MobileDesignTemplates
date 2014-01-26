@@ -1,0 +1,24 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="Mobile Design Templates Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            <apex:form id="form">
+                <div class="app-wrapper">
+                    
+                    <c:MobileDesignTempletesMenu />
+                    <c:MobileDesignTempletesHeader headerTitle="Sample" />
+                    
+                    <div class="app-content">
+                        
+                        <!-- your code -->
+                        
+                    </div><!--#app-content-->
+                </div><!--#app-wrapper-->
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

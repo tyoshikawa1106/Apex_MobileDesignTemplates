@@ -1,0 +1,182 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="Mobile Design Templates Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            <apex:form id="form">
+                <div class="app-wrapper">
+                    
+                    <c:MobileDesignTempletesMenu />
+                    <c:MobileDesignTempletesHeader headerTitle="ToDo Tasks" />
+                    
+                    <div class="app-content">
+                        
+                        <ul class="tabbed-list-view">
+                            <li>
+                                <ul class="list-view list-view-tasks">
+                                    <li class="overdue">
+                                        <div class="content">
+                                            <div class="task-complete-checkbox">
+                                                <input type="checkbox" name="checkbox" />
+                                            </div>
+                                            <div class="date">
+                                                <apex:outputText value="07/14" />
+                                            </div>   
+                                            <h2>
+                                                <apex:outputText value="Call Mathew" />
+                                            </h2>
+                                            <p>
+                                                <apex:outputLink value="#">
+                                                    <apex:outputText value="Matthew Smith" />
+                                                </apex:outputLink>
+                                            </p>
+                                            <p>
+                                                <apex:outputText value="Re: " />
+                                                <apex:outputLink value="#">
+                                                    <apex:outputText value="System Upates" />
+                                                </apex:outputLink>
+                                            </p>
+                                        </div><!--.content-->
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <div class="task-complete-checkbox">
+                                                <input type="checkbox" name="checkbox" />
+                                            </div>
+                                            <div class="date">
+                                                <apex:outputText value="07/14" />
+                                            </div>   
+                                            <h2>
+                                                <apex:outputText value="Call Mathew" />
+                                            </h2>
+                                            <p>
+                                                <apex:outputLink value="#">
+                                                    <apex:outputText value="Matthew Smith" />
+                                                </apex:outputLink>
+                                            </p>
+                                            <p>
+                                                <apex:outputText value="Re: " />
+                                                <apex:outputLink value="#">
+                                                    <apex:outputText value="System Upates" />
+                                                </apex:outputLink>
+                                            </p>
+                                        </div><!--.content-->
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <div class="task-complete-checkbox">
+                                                <input type="checkbox" name="checkbox" />
+                                            </div>
+                                            <div class="date">
+                                                <apex:outputText value="07/14" />
+                                            </div>   
+                                            <h2>
+                                                <apex:outputText value="Call Mathew" />
+                                            </h2>
+                                            <p>
+                                                <apex:outputLink value="#">
+                                                    <apex:outputText value="Matthew Smith" />
+                                                </apex:outputLink>
+                                            </p>
+                                            <p>
+                                                <apex:outputText value="Re: " />
+                                                <apex:outputLink value="#">
+                                                    <apex:outputText value="System Upates" />
+                                                </apex:outputLink>
+                                            </p>
+                                        </div><!--.content-->
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list-view list-view-tasks">
+                                    <li class="overdue">
+                                        <div class="content">
+                                            <div class="task-complete-checkbox">
+                                                <input type="checkbox" name="checkbox" />
+                                            </div>
+                                            <div class="date">
+                                                <apex:outputText value="07/14" />
+                                            </div>   
+                                            <h2>
+                                                <apex:outputText value="Call Mathew" />
+                                            </h2>
+                                            <p>
+                                                <apex:outputLink value="#">
+                                                    <apex:outputText value="Matthew Smith" />
+                                                </apex:outputLink>
+                                            </p>
+                                            <p>
+                                                <apex:outputText value="Re: " />
+                                                <apex:outputLink value="#">
+                                                    <apex:outputText value="System Upates" />
+                                                </apex:outputLink>
+                                            </p>
+                                        </div><!--.content-->
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list-view list-view-tasks">
+                                    <li class="overdue">
+                                        <div class="content">
+                                            <div class="task-complete-checkbox">
+                                                <input type="checkbox" name="checkbox" />
+                                            </div>
+                                            <div class="date">
+                                                <apex:outputText value="07/14" />
+                                            </div>   
+                                            <h2>
+                                                <apex:outputText value="Call Mathew" />
+                                            </h2>
+                                            <p>
+                                                <apex:outputlink value="#">
+                                                    <apex:outputText value="Matthew Smith" />
+                                                </apex:outputlink>
+                                            </p>
+                                            <p>
+                                                <apex:outputText value="Re: " />
+                                                <apex:outputLink value="#">
+                                                    <apex:outputText value="System Upates" />
+                                                </apex:outputLink>
+                                            </p>
+                                        </div><!--.content-->
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <div class="task-complete-checkbox">
+                                                <input type="checkbox" name="checkbox" />
+                                            </div>
+                                            <div class="date">
+                                                <apex:outputText value="07/14" />
+                                            </div>   
+                                            <h2>
+                                                <apex:outputText value="Call Mathew" />
+                                            </h2>
+                                            <p>
+                                                <apex:outputLink value="#">
+                                                    <apex:outputText value="Matthew Smith" />
+                                                </apex:outputLink>
+                                            </p>
+                                            <p>
+                                                <apex:outputText value="Re: " />
+                                                <apex:outputLink value="#">
+                                                    <apex:outputText value="System Upates" />
+                                                </apex:outputLink>
+                                            </p>
+                                        </div><!--.content-->
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul><!--.tabbed-list-view-->
+                        
+                    </div><!--#app-content-->
+                </div><!--#app-wrapper-->
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

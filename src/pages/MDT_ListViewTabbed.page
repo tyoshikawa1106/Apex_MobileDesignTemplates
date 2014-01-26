@@ -1,0 +1,125 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="Mobile Design Templates Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            <apex:form id="form">
+                <div class="app-wrapper">
+                
+                    <c:MobileDesignTempletesMenu />
+                    <c:MobileDesignTempletesHeader headerTitle="List View Tabbed" />
+                    
+                    <div class="app-content">
+                    
+                        <div class="tabbed-list-view-nav">
+                            <apex:outputLink value="#" styleClass="span-50 on">
+                                <apex:outputText value="Red Fish" />
+                            </apex:outputLink>
+                            <apex:outputLink value="#" styleClass="span-50">
+                                <apex:outputText value="Blue Fish" />
+                            </apex:outputLink>
+                            <div class="tabbed-list-view-nav-arrow">&nbsp;</div>
+                        </div>
+                        
+                        <ul class="tabbed-list-view">
+                            <li>
+                                <ul class="list-view with-swipe left-thumbs right-one-icons">
+                                    <li>
+                                        <div class="thumbs">
+                                            <apex:outputLink value="#" styleClass="thumb thumb-1">
+                                                <apex:image styleClass="thumb" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/icons/tile-phone.png')}" />
+                                            </apex:outputLink>
+                                            <apex:outputLink value="#" styleClass="thumb thumb-2">
+                                                <apex:image styleClass="thumb" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/icons/tile-email.png')}" />
+                                            </apex:outputLink>
+                                            <apex:image styleClass="thumb thumb-3" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/placeholders/contact-2.png')}" />
+                                        </div><!-- .thumbs -->
+                                        <apex:outputLink value="#" styleClass="content">
+                                            <h2>
+                                                <apex:outputText value="Rachel Aarons" />
+                                            </h2>
+                                            <apex:outputText value="Project Manager" />
+                                            <div class="list-view-icons">
+                                                <span class="icon-right-arrow">&nbsp;</span>
+                                            </div>
+                                        </apex:outputLink>
+                                    </li>
+                                    <li>
+                                        <div class="thumbs">
+                                            <apex:outputLink value="#" styleClass="thumb thumb-1">
+                                                <apex:image styleClass="thumb" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/icons/tile-phone.png')}" />
+                                            </apex:outputLink>
+                                            <apex:outputLink value="#" styleClass="thumb thumb-2">
+                                                <apex:image styleClass="thumb" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/icons/tile-email.png')}" />
+                                            </apex:outputLink>
+                                            <apex:image styleClass="thumb thumb-3" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/placeholders/contact-3.png')}" />
+                                        </div><!-- .thumbs -->
+                                        
+                                        <apex:outputLink value="#" styleClass="content">
+                                            <h2>
+                                                <apex:outputText value="Nathan An" />
+                                            </h2>
+                                            <apex:outputText value="Public Relations" />
+                                            <div class="list-view-icons">
+                                                <span class="icon-right-arrow">&nbsp;</span>
+                                            </div>
+                                        </apex:outputLink>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list-view with-swipe left-thumbs right-one-icons">
+                                    <li>
+                                        <div class="thumbs">
+                                            <apex:outputLink value="#" styleClass="thumb thumb-1">
+                                                <apex:image styleClass="thumb" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/icons/tile-phone.png')}" />
+                                            </apex:outputLink>
+                                            <apex:outputLink value="#" styleClass="thumb thumb-2">
+                                                <apex:image styleClass="thumb" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/icons/tile-email.png')}" />
+                                            </apex:outputLink>
+                                            <apex:image styleClass="thumb thumb-3" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/placeholders/contact-1.png')}" />
+                                        </div><!-- .thumbs -->
+                                        <apex:outputLink value="#" styleClass="content">
+                                            <h2>
+                                                <apex:outputText value="Bruce Bryant" />
+                                            </h2>
+                                            <apex:outputText value="IT Supervisor" />
+                                            <div class="list-view-icons">
+                                                <span class="icon-right-arrow">&nbsp;</span>
+                                            </div>
+                                        </apex:outputLink>
+                                    </li>
+                                    <li>
+                                        <div class="thumbs">
+                                            <apex:outputLink value="#" styleClass="thumb thumb-1">
+                                                <apex:image styleClass="thumb" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/icons/tile-phone.png')}" />
+                                            </apex:outputLink>
+                                            <apex:outputLink value="#" styleClass="thumb thumb-2">
+                                                <apex:image styleClass="thumb" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/icons/tile-email.png')}" />
+                                            </apex:outputLink>
+                                            <apex:image styleClass="thumb thumb-3" value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/placeholders/contact-4.png')}" />
+                                        </div><!-- .thumbs -->
+                                        <apex:outputLink value="#" styleClass="content">
+                                            <h2>
+                                                <apex:outputText value="Samantha Bard" />
+                                            </h2>
+                                            <apex:outputText value="System Analyst" />
+                                            <div class="list-view-icons">
+                                                <span class="icon-right-arrow">&nbsp;</span>
+                                            </div>
+                                        </apex:outputLink>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul><!--.tabbed-list-view-->
+                    
+                    </div><!--#app-content-->
+                </div><!--#app-wrapper-->
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

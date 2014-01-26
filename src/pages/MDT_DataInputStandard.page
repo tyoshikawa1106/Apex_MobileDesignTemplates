@@ -1,0 +1,149 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="Mobile Design Templates Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            <apex:form id="form">
+                <div class="app-wrapper">
+                    
+                    <c:MobileDesignTempletesMenu />
+                    <c:MobileDesignTempletesHeader headerTitle="Data Input Standard" />
+                    
+                    <div class="app-content">
+                        <form>
+                            <section class="border-bottom">
+                                <div class="content">
+                                    <h3>
+                                        <apex:outputText value="Hotel Name" />
+                                    </h3>
+                                    <div class="form-control-group">
+                                        <div class="form-control form-control-text">
+                                            <input type="text" name="text" />
+                                        </div>
+                                    </div>
+                                </div><!--.content-->
+                            </section>
+                            
+                            <section class="border-bottom">
+                                <div class="content">
+                                    <h3>
+                                        <apex:outputText value="Inspection Date" />
+                                    </h3>
+                                    <div class="form-control-group">
+                                        <div class="form-control form-control-date">
+                                            <input type="date" name="date" />
+                                        </div>
+                                    </div>
+                                </div><!--.content-->
+                            </section>
+                        
+                            <section class="border-bottom">
+                                <div class="content">
+                                    <h3>
+                                        <apex:outputText value="Passed" />
+                                    </h3>
+                                    <div class="form-control-group">
+                                        <div class="form-control form-control-toggle" data-on-label="yes" data-off-label="no">
+                                            <input type="checkbox" name="toggle" />
+                                        </div>
+                                    </div>
+                                </div><!--.content-->
+                            </section>
+                            
+                            <section class="border-bottom">
+                                <div class="content">
+                                    <h3>
+                                        <apex:outputText value="Remarks" />
+                                    </h3>
+                                    <div class="form-control-group">
+                                        <div class="form-control form-control-textarea">
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+                                </div><!--.content-->
+                            </section>
+                            
+                            <section class="border-bottom">
+                                <div class="content">
+                                    <h3>
+                                        <apex:outputText value="Room Types" />
+                                    </h3>
+                                    <div class="span-50 form-control-group">
+                                        <div class="form-control form-control-checkbox">
+                                            <input type="checkbox" />
+                                            <label>
+                                                <apex:outputText value="Single" />
+                                            </label>
+                                        </div>
+                                        <div class="form-control form-control-checkbox">
+                                            <input type="checkbox" />
+                                            <label>
+                                                <apex:outputText value="Double" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="span-50 form-control-group">
+                                        <div class="form-control form-control-checkbox">
+                                            <input type="checkbox" />
+                                            <label>
+                                                <apex:outputText value="Suite" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div><!--.content-->
+                            </section>
+                            
+                            <section class="border-bottom">
+                                <div class="content">
+                                    <h3>
+                                        <apex:outputText value="Hotel Type" />
+                                    </h3>
+                                    <div class="form-control-group">
+                                        <div class="form-control form-control-select">
+                                            <select>
+                                                <option>
+                                                    <apex:outputText value="Owner Operated" />
+                                                </option>
+                                                <option>
+                                                    <apex:outputText value="Co-op" />
+                                                </option>
+                                                <option>
+                                                    <apex:outputText value="Pure Anarchy" />
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div><!--.content-->
+                            </section>
+
+                            <section >
+                                <div class="content">
+                                    <h3>
+                                        <apex:outputText value="Number of Rooms" />
+                                    </h3>
+                                    <div class="form-control-group">
+                                        <div class="form-control form-control-number">
+                                            <input type="number" />
+                                        </div>
+                                    </div>
+                                </div><!--.content-->
+                            </section>
+                            
+                            <section class="data-capture-buttons one-buttons">
+                                <div class="content">
+                                    <apex:outputLink value="#">
+                                        <apex:outputText value="submit" />
+                                    </apex:outputLink>
+                                </div>
+                            </section><!--.data-capture-buttons-->
+                        </form>
+                    </div>
+                </div>
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

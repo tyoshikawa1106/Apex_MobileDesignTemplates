@@ -1,0 +1,49 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    
+    <apex:includeScript value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/js/d3.v3.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/js/gauge.min.js')}" />
+    
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="Mobile Design Templates Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            <apex:form id="form">
+                <div class="app-wrapper">
+                    
+                    <c:MobileDesignTempletesMenu />
+                    <c:MobileDesignTempletesHeader headerTitle="Donut Report" />
+                    
+                    <div class="app-content">
+                        
+                        <div class="detail-view-header">
+                            <div class="content">
+                                <h1>
+                                    <apex:outputText value="Donut" />
+                                </h1>
+                            </div><!--.content-->
+                        </div><!--.detail-view-header-->
+                        
+                        <section>
+                            <div class="content">
+                                <div id="graph" class="graph"></div>
+                            </div><!-- .content -->
+                        </section>
+                        
+                    </div><!--#app-content-->
+                </div><!--#app-wrapper-->
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            reportObj.init({
+                graphType: "donut",
+                jsonURL: "{!URLFOR($Resource.Mobile_Design_Templates, 'common/json/survey.json')}"
+            });
+        });
+    </script>
+</apex:page>

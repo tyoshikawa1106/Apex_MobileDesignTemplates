@@ -1,0 +1,65 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    
+    <apex:includeScript value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/js/d3.v3.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/js/gauge.min.js')}" />
+    
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="Mobile Design Templates Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            <apex:form id="form">
+                <div class="app-wrapper">
+                    
+                    <c:MobileDesignTempletesMenu />
+                    <c:MobileDesignTempletesHeader headerTitle="Line Charet Report" />
+                    
+                    <div class="app-content">
+                        
+                        <div class="detail-view-header">
+                            <div class="content">
+                                <h1>
+                                    <apex:outputText value="Line Charet" />
+                                </h1>
+                            </div><!--.content-->
+                        </div><!--.detail-view-header-->
+                        
+                        <section class="border-bottom">
+                            <div class="content padding-bottom-gutter">
+                                <h3>
+                                    <apex:outputText value="Show Sales From" />
+                                </h3>
+                                <div id="graph-data-select"></div>
+                            </div>
+                        </section>
+                        
+                        <section>
+                            <div class="content">
+                                <div id="graph" class="graph"></div>
+                            </div><!-- .content -->
+                        </section>
+                        
+                    </div><!--#app-content-->
+                </div><!--#app-wrapper-->
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            reportObj.init({
+                graphType: "line",
+                jsonURL: "{!URLFOR($Resource.Mobile_Design_Templates, 'common/json/sales.json')}",
+                line: {
+                    periods : [10, 30]
+                },
+                axis: {
+                    xAxisIndex: "date",
+                    yAxisIndex: "total"
+                }
+            });
+        });
+    </script>
+</apex:page>

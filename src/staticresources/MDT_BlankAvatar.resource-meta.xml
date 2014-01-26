@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
     <cacheControl>Private</cacheControl>
-    <contentType>application/x-zip-compressed</contentType>
-    <description>Mobile-Design-Templates
+    <contentType>image/png</contentType>
+    <description>Mobile-Design-Templates 
 https://github.com/developerforce/Mobile-Design-Templates</description>
 </StaticResource>

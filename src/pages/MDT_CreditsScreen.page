@@ -1,0 +1,67 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="Mobile Design Templates Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            <apex:form id="form">
+                <div class="app-wrapper">
+                    
+                    <c:MobileDesignTempletesMenu />
+                    <c:MobileDesignTempletesHeader headerTitle="Credits Screen" />
+                    
+                    <div class="app-content">
+                        
+                        <div class="detail-view-header detail-view-header-about">
+                            <div class="content">
+                                <apex:image value="{!URLFOR($Resource.Mobile_Design_Templates, 'common/images/placeholders/logo.png')}" width="206" height="54" />
+                                <div class="version">
+                                    <apex:outputText value="App Version 2.13" />
+                                </div>
+                                <div class="description">
+                                    <apex:outputText value="Nam placerat ut quam vel accumsan. Aliquam nec vulputate tellus, nec faucibus tortor. Proin in fermentum purus, at tempor arcu. In auctor est in mi vehicula, eu eleifend est sodales." />
+                                </div>
+                            </div><!--.content-->
+                        </div><!--.detail-view-header-->
+                        
+                        <ul class="list-view right-one-icons padding-top-gutter">
+                            <li>
+                                <apex:outputLink value="#" styleClass="content">
+                                    <h2>
+                                        <apex:outputText value="Rate this App" />
+                                    </h2>
+                                    <div class="list-view-icons">
+                                        <span class="icon-right-arrow">&nbsp;</span>
+                                    </div>
+                                </apex:outputLink>
+                            </li>
+                            <li>
+                                <apex:outputLink value="#" styleClass="content">
+                                    <h2>
+                                        <apex:outputText value="Feedback" />
+                                    </h2>
+                                    <div class="list-view-icons">
+                                        <span class="icon-right-arrow">&nbsp;</span>
+                                    </div>
+                                </apex:outputLink>
+                            </li>
+                            <li>
+                                <apex:outputLink value="#" styleClass="content">
+                                    <h2>
+                                        <apex:outputText value="Legal" />
+                                    </h2>
+                                    <div class="list-view-icons">
+                                        <span class="icon-right-arrow">&nbsp;</span>
+                                    </div>
+                                </apex:outputLink>
+                            </li>
+                        </ul>
+                        
+                    </div><!--#app-content-->
+                </div><!--#app-wrapper-->
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

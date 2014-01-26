@@ -1,0 +1,67 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="Mobile Design Templates Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            <apex:form id="form">
+            
+                <div class="app-wrapper">
+                
+                    <c:MobileDesignTempletesMenu />
+                    <c:MobileDesignTempletesHeader headerTitle="List View Carousel" />
+                    
+                    <div id="app-content" class="app-content">
+                        <div id="carousel-wrapper"></div>
+                    </div><!--#app-content-->
+                </div><!--#app-wrapper-->
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var slides = [            
+                    {
+                        img: url("/resource/Mobile_Design_Templates/common/images/placeholders/gallery/pic02.jpg"),
+                        width: 300,
+                        height: 164,
+                        desc: '<h3>A Product</h3>$341.12'
+                    },
+                    {
+                        img: url("/resource/Mobile_Design_Templates/common/images/placeholders/gallery/pic03.jpg"),
+                        width: 300,
+                        height: 213,
+                        desc: '<h3>A Product</h3>$341.12'
+                    },
+                    {
+                        img: url("/resource/Mobile_Design_Templates/common/images/placeholders/gallery/pic04.jpg"),
+                        width: 147,
+                        height: 220,
+                        desc: '<h3>A Product</h3>$341.12'
+                    },
+                    {
+                        img: url("/resource/Mobile_Design_Templates/common/images/placeholders/gallery/pic05.jpg"),
+                        width: 300,
+                        height: 213,
+                        desc: '<h3>A Product</h3>$341.12'
+                    },
+                    {
+                        img: url("/resource/Mobile_Design_Templates/common/images/placeholders/gallery/pic06.jpg"),
+                        width: 165,
+                        height: 220,
+                        desc: '<h3>A Product</h3>$341.12'
+                    }
+                ];
+        
+            carouselObj.init({
+                container: "#carousel-wrapper",
+                slides: slides
+            });
+        });
+    </script>
+    
+</apex:page>

@@ -1,0 +1,157 @@
+<apex:page showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" id="page">
+    
+    <apex:composition template="MobileDesignTemplete">
+    
+        <apex:define name="title">
+            <apex:outputText value="Mobile Design Templates Apps" />
+        </apex:define>
+        
+        <apex:define name="body">
+            <apex:form id="form">
+                <div class="app-wrapper">
+                    
+                    <c:MobileDesignTempletesMenu />
+                    <c:MobileDesignTempletesHeader headerTitle="Day Calendar" />
+                    
+                    <div class="app-content">
+                        
+                        <div class="span-50 padding-right-gutter-half">
+                            <h1 class="padding-bottom-gutter">
+                                <apex:outputText value="My Week" />
+                            </h1>
+                            <ul class="week-planner">
+                                <li data-date="06-20">
+                                    <div class="date">
+                                        <apex:outputText value="06/20" />
+                                    </div>
+                                    <ul class="week-planner-items">
+                                        <li class="event"></li>
+                                        <li class="event"></li>
+                                        <li class="task"></li>
+                                        <li class="task"></li>
+                                    </ul>
+                                </li>
+                                <li data-date="06-21">
+                                    <div class="date">
+                                        <apex:outputText value="06/21" />
+                                    </div>
+                                    <ul class="week-planner-items">
+                                        <li class="event"></li>
+                                        <li class="task"></li>
+                                    </ul>
+                                </li>
+                            </ul><!-- .week-planner -->   
+                        </div><!-- .span-50 -->
+                        
+                        <div class="span-50 padding-left-gutter-half">
+                            <div class="date-content" id="date-content-06-20">
+                                <h1 class="event">
+                                    <apex:outputText value="Events" />
+                                </h1>
+                                <div class="events">
+                                    <h3>
+                                        <apex:outputText value="Weekly Sales meeting" />
+                                    </h3>
+                                    <p>
+                                        <apex:outputText value="10:00AM - 11:00AM" />
+                                        <br/>
+                                        <apex:outputLink value="#">
+                                            <apex:outputText value="John Doe" />
+                                        </apex:outputLink>
+                                        <br/>
+                                        <apex:outputLink value="#">
+                                            <apex:outputText value="Opportunity #1232213" />
+                                        </apex:outputLink>
+                                    </p>
+                                    <h3>
+                                        <apex:outputText value="Weekly Sales meeting" />
+                                    </h3>
+                                    <p>
+                                        <apex:outputText value="10:00AM - 11:00AM" />
+                                        <br/>
+                                        <apex:outputLink value="#">
+                                            <apex:outputText value="John Doe" />
+                                        </apex:outputLink>
+                                        <br/>
+                                        <apex:outputLink value="#">
+                                            <apex:outputText value="Opportunity #1232213" />
+                                        </apex:outputLink>
+                                    </p>
+                                </div><!-- .events -->
+                                <h1 class="task">
+                                    <apex:outputText value="Tasks" />
+                                </h1>
+                                <div class="tasks">
+                                    <h3>
+                                        <apex:outputText value="Weekly Sales meeting" />
+                                    </h3>
+                                    <p>
+                                        <apex:outputLink value="#">
+                                            <apex:outputText value="John Doe" />
+                                        </apex:outputLink>
+                                        <br/>
+                                        <apex:outputLink value="#">
+                                            <apex:outputText value="Opportunity #1232213" />
+                                        </apex:outputLink>
+                                    </p>
+                                    <h3>
+                                        <apex:outputText value="Weekly Sales meeting" />
+                                    </h3>
+                                    <p>
+                                        <apex:outputLink value="#">
+                                            <apex:outputText value="John Doe" />
+                                        </apex:outputLink>
+                                        <br/>
+                                        <apex:outputLink value="#">
+                                            <apex:outputText value="Opportunity #1232213" />
+                                        </apex:outputLink>
+                                    </p>
+                                </div><!-- .tasks -->
+                            </div><!-- .date-content -->
+                            
+                            <div class="date-content" id="date-content-06-21">
+                                <h1 class="event">
+                                    <apex:outputText value="Events" />
+                                </h1>
+                                <div class="events">
+                                    <h3>
+                                        <apex:outputText value="Weekly Sales meeting" />
+                                    </h3>
+                                    <p>
+                                        <apex:outputText value="10:00AM - 11:00AM" />
+                                        <br/>
+                                        <apex:outputLink value="#">
+                                            <apex:outputText value="John Doe" />
+                                        </apex:outputLink>
+                                        <br/>
+                                        <apex:outputLink value="#">
+                                            <apex:outputText value="Opportunity #1232213" />
+                                        </apex:outputLink>
+                                    </p>
+                                </div><!-- .events -->
+                                <h1 class="task">
+                                    <apexoutputText value="Tasks" />
+                                </h1>
+                                <div class="tasks">
+                                    <h3>
+                                        <apex:outputText value="Weekly Sales meeting" />
+                                    </h3>
+                                    <p>
+                                        <apex:outputLink value="#">
+                                            <apex:outputText value="John Doe" />
+                                        </apex:outputLink>
+                                        <br/>
+                                        <apex:outputLink value="#">
+                                            <apex:outputText value="Opportunity #1232213" />
+                                        </apex:outputLink>
+                                    </p>
+                                </div><!-- .tasks -->
+                            </div><!-- .date-content -->
+                        </div><!--.span-50-->
+                            
+                    </div><!--#app-content-->
+                </div><!--#app-wrapper-->
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

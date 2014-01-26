@@ -1,0 +1,76 @@
+<apex:component >
+    <nav class="main-menu" style="height: 1100px;">
+        <apex:outputLink value="{!$Page.MDT_ListViewStandard}">
+            <apex:outputText value="Standard" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_ListViewTabbed}">
+            <apex:outputText value="Tabbed" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_ListViewPicture}">
+            <apex:outputText value="Picture" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_ListViewTimeline}">
+            <apex:outputText value="Timeline" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_ListViewCollapsible}">
+            <apex:outputText value="Collapsible" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_ListViewCarousel}">
+            <apex:outputText value="Carousel" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_DetailView1}">
+            <apex:outputText value="DetailView1" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_DetailView2}">
+            <apex:outputText value="DetailView2" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_DetailView3}">
+            <apex:outputText value="DetailView3" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_DataInputStandard}">
+            <apex:outputText value="DataInputStandard" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_DataInputSurvey}">
+            <apex:outputText value="DataInputSurvey" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_MapView1}">
+            <apex:outputText value="MapView1" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_MapView2}">
+            <apex:outputText value="MapView2" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_DayCalendar}">
+            <apex:outputText value="DayCalendar" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_ToDoTasks}">
+            <apex:outputText value="ToDoTasks" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_ReportsGauge}">
+            <apex:outputText value="Gauge" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_ReportsDonut}">
+            <apex:outputText value="Donut" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_ReportsBarChart}">
+            <apex:outputText value="BarChart" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_ReportsLineChart}">
+            <apex:outputText value="LineChart" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_SettingsScreen}">
+            <apex:outputText value="SettingsScreen" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_SplashScreen}">
+            <apex:outputText value="Splash Screen" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_CreditsScreen}">
+            <apex:outputText value="Credits Screen" />
+        </apex:outputLink>
+        <apex:outputLink value="{!$Page.MDT_ContactsViewer}">
+            <apex:outputText value="Sample Apps" />
+        </apex:outputLink>
+        <apex:outputLink value="/home/home.jsp">
+            <apex:outputText value="Home" />
+        </apex:outputLink>
+    </nav>
+</apex:component>
